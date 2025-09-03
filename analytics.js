@@ -4,7 +4,7 @@ class EkaAnalytics {
         this.initialized = false;
         this.queue = [];
         this.config = {
-            measurementId: 'G-VXWZ9C25H6', // Replace with your GA4 Measurement ID
+            measurementId: 'G-03QW79K0C2', // Replace with your GA4 Measurement ID
             debug: false,
             privacy: {
                 anonymizeIP: true,
