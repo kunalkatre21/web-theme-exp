@@ -1,0 +1,1039 @@
+<html lang="en"><head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eka Care — AI Stack for Modern Healthcare</title>
+    <meta name="description" content="AI-powered healthcare platform for clinics, hospitals, and healthcare innovators. Modern clinic OS powered by data and AI.">
+    <meta name="theme-color" content="#0f766e">
+
+    <!-- Preconnect to analytics domains for better performance -->
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="analytics.js"></script> <!-- Analytics first for early initialization -->
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+</head>
+<body class="antialiased font-['Inter'] overflow-x-hidden text-text-primary bg-bg-primary">
+    <!-- Background Effects -->
+    <div class="pointer-events-none fixed inset-0 overflow-hidden">
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] rounded-full blur-3xl opacity-30 bg-gradient-radial-1"></div>
+        <div class="absolute bottom-0 right-0 w-[800px] h-[800px] translate-x-1/3 translate-y-1/3 rounded-full blur-3xl opacity-25 bg-gradient-radial-2"></div>
+        <div class="absolute top-1/2 left-0 w-[600px] h-[600px] -translate-x-1/3 -translate-y-1/2 rounded-full blur-3xl opacity-20 bg-gradient-radial-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="relative z-10" id="hero-section">
+            <div class="max-w-6xl sm:px-6 lg:px-8 sm:pt-32 mr-auto ml-auto pt-20 pr-4 pl-4">
+                <div class="text-center mx-auto space-y-8">
+                    <div class="fade-in">
+                        <span class="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium backdrop-blur-xl border-border-primary bg-bg-glass text-text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="activity" class="lucide lucide-activity h-4 w-4 text-emerald-400"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                            AI-Powered Healthcare Platform
+                        </span>
+                    </div>
+    
+                    <h1 class="sm:text-6xl md:text-7xl lg:text-8xl leading-none fade-in fade-in-delay-1 text-5xl font-semibold tracking-tighter text-text-primary">
+                        AI Stack for <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-teal-500 to-cyan-400">Modern</span><br>
+                        Healthcare.
+                    </h1>
+                    
+                    <p class="max-w-2xl mx-auto text-lg sm:text-xl leading-relaxed fade-in fade-in-delay-2 text-text-secondary">
+                        Platform for clinics, hospitals, startups, and payors, powered by data & AI. Build healthcare solutions that scale with confidence.
+                    </p>
+
+                    <!-- Trusted By Section -->
+                    <div class="pt-8 fade-in fade-in-delay-2">
+                        <p class="text-sm font-medium text-text-tertiary mb-6">Trusted by leading healthcare innovators</p>
+                        <div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
+                            <div class="h-8 flex items-center">
+                                <span class="text-text-secondary font-semibold text-lg">Healthi</span>
+                            </div>
+                            <div class="h-8 flex items-center">
+                                <span class="text-text-secondary font-semibold text-lg">Samsung</span>
+                            </div>
+                            <div class="h-8 flex items-center">
+                                <span class="text-text-secondary font-semibold text-lg">AWS</span>
+                            </div>
+                            <div class="h-8 flex items-center">
+                                <span class="text-text-secondary font-semibold text-lg">HealthiMind</span>
+                            </div>
+                            <div class="h-8 flex items-center">
+                                <span class="text-text-secondary font-semibold text-lg">Gynoveda</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6 fade-in fade-in-delay-3">
+                        <div class="inline-block bg-transparent">
+                          <button class="cursor-follow-cta focus:outline-none">
+                              <span class="relative z-10 flex items-center gap-2">
+                                Get Started - For Providers
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                              </span>
+                          </button>
+                        </div>
+                        <button class="apple-button flex gap-2 text-base font-medium border rounded-full pt-3 pr-8 pb-3 pl-8 backdrop-blur-xl items-center text-text-primary bg-bg-card border-border-primary hover:bg-bg-card-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="play" class="lucide lucide-play h-4 w-4"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg>
+                            Watch Platform Demo
+                        </button>
+                    </div>
+
+                    <p class="text-sm fade-in fade-in-delay-4 text-text-tertiary">
+                        Available for clinics, hospitals, and healthcare startups
+                    </p>
+                </div>
+    
+                <!-- Solution Highlights Section -->
+                <section class="relative z-10 py-24 sm:py-32">
+                    <div class="max-w-7xl sm:px-6 lg:px-8 mr-auto ml-auto pr-4 pl-4">
+                    <div class="columns-1 md:columns-2 lg:columns-2 gap-6 space-y-6">
+                
+                        <!-- Card 1 - Modern Clinic OS -->
+                        <div class="break-inside-avoid group rounded-3xl bg-gradient-to-br from-emerald-500/10 to-teal-600/10 border border-emerald-500/20 hover:border-emerald-400/40 transition-all duration-300 hover-lift fade-in overflow-hidden">
+                        <!-- Product Preview: Clinic OS Dashboard -->
+                        <div class="h-48 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-emerald-900/10"></div>
+                            <div class="relative h-auto w-full rounded-2xl bg-bg-secondary/70 backdrop-blur-xl border border-border-secondary shadow-inner">
+                            <!-- Window bar -->
+                            <div class="flex items-center justify-between px-3 py-2 border-b border-border-secondary">
+                                <div class="flex items-center gap-1.5">
+                                <span class="h-2.5 w-2.5 rounded-full bg-red-400/80"></span>
+                                <span class="h-2.5 w-2.5 rounded-full bg-amber-400/80"></span>
+                                <span class="h-2.5 w-2.5 rounded-full bg-emerald-400/80"></span>
+                                </div>
+                                <div class="text-[10px] text-text-secondary">Clinic OS • EMR</div>
+                            </div>
+                            <!-- Content -->
+                            <div class="grid grid-cols-12 gap-3 p-3">
+                                <!-- Sidebar -->
+                                <div class="col-span-3 space-y-2">
+                                <div class="h-8 rounded-md bg-emerald-theme border border-emerald-theme flex items-center px-2 text-[10px] text-emerald-theme">Patients</div>
+                                <div class="h-6 rounded-md bg-bg-secondary border border-border-secondary text-[10px] text-text-secondary flex items-center px-2">Appointments</div>
+                                <div class="h-6 rounded-md bg-bg-secondary border border-border-secondary text-[10px] text-text-secondary flex items-center px-2">Billing</div>
+                                <div class="h-6 rounded-md bg-bg-secondary border border-border-secondary text-[10px] text-text-secondary flex items-center px-2">Reports</div>
+                                </div>
+                                <!-- Main -->
+                                <div class="col-span-9 space-y-3">
+                                <!-- KPIs -->
+                                <div class="grid grid-cols-3 gap-2">
+                                    <div class="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-2">
+                                    <div class="text-[10px] text-text-secondary">Today’s Visits</div>
+                                    <div class="text-sm font-semibold text-text-primary">26</div>
+                                    </div>
+                                    <div class="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-2">
+                                    <div class="text-[10px] text-text-secondary">Avg. Wait</div>
+                                    <div class="text-sm font-semibold text-text-primary">08:42</div>
+                                    </div>
+                                    <div class="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-2">
+                                    <div class="text-[10px] text-text-secondary">SLA</div>
+                                    <div class="text-sm font-semibold text-emerald-theme">96%</div>
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <div class="rounded-lg border border-border-secondary overflow-hidden">
+                                    <div class="grid grid-cols-6 text-[10px] text-text-secondary bg-bg-secondary/60 border-b border-border-secondary px-2 py-1">
+                                    <div class="col-span-2">Patient</div>
+                                    <div>Age</div>
+                                    <div>Reason</div>
+                                    <div>Status</div>
+                                    <div>Room</div>
+                                    </div>
+                                    <div class="divide-y divide-border-secondary/70">
+                                    <div class="grid grid-cols-6 items-center text-[11px] text-text-primary px-2 py-1.5">
+                                        <div class="col-span-2">A. Sharma</div>
+                                        <div>42</div>
+                                        <div>Follow-up</div>
+                                        <div><span class="inline-flex items-center rounded-md bg-emerald-theme text-emerald-theme border border-emerald-theme text-[8px] px-1 py-0.5">In Room</span></div>
+                                        <div>3B</div>
+                                    </div>
+                                    <div class="grid grid-cols-6 items-center text-[11px] text-text-primary px-2 py-1.5">
+                                        <div class="col-span-2">M. Khan</div>
+                                        <div>29</div>
+                                        <div>Fever</div>
+                                        <div><span class="inline-flex items-center rounded-md bg-amber-500/10 text-amber-300 border border-amber-500/20 text-[8px] px-1 py-0.5">Triage</span></div>
+                                        <div>W1</div>
+                                    </div>
+                                    <div class="grid grid-cols-6 items-center text-[11px] text-text-primary px-2 py-1.5">
+                                        <div class="col-span-2">R. Patel</div>
+                                        <div>67</div>
+                                        <div>BP Check</div>
+                                        <div><span class="inline-flex items-center rounded-md bg-sky-theme text-sky-theme border border-sky-theme text-[8px] px-1 py-0.5">Waiting</span></div>
+                                        <div>2A</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-text-primary mb-3 tracking-tight">Modern Clinic OS</h3>
+                            <p class="text-text-secondary leading-relaxed text-sm">AI-powered clinic management system for healthcare providers who want to focus on patient care, not paperwork.</p>
+                            <div class="mt-4 flex items-center text-xs text-emerald-theme">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            </svg>
+                            AI-Powered • EMR • Patient Care
+                            </div>
+                        </div>
+                        </div>
+                
+                        <!-- Card 2 - Your Health, All in One Place -->
+                        <div class="break-inside-avoid group rounded-3xl bg-gradient-to-br from-blue-500/10 to-cyan-600/10 border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 hover-lift fade-in fade-in-delay-1 overflow-hidden">
+                        <!-- Product Preview: Patient Portal -->
+                        <div class="h-32 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-sky-900/10"></div>
+                            <div class="relative h-auto w-full rounded-2xl bg-bg-secondary/70 backdrop-blur-xl border border-border-secondary shadow-inner px-3 py-2">
+                            <!-- Mobile frame -->
+                            <div class="mx-auto h-full w-full max-w-[420px] grid grid-cols-3 gap-2">
+                                <!-- Sidebar tabs -->
+                                <div class="col-span-1 space-y-2">
+                                <div class="rounded-md border border-blue-theme bg-blue-theme text-[10px] text-blue-theme px-2 py-1">Overview</div>
+                                <div class="rounded-md border border-border-secondary bg-bg-secondary text-[10px] text-text-secondary px-2 py-1">Labs</div>
+                                <div class="rounded-md border border-border-secondary bg-bg-secondary text-[10px] text-text-secondary px-2 py-1">Rx</div>
+                                <div class="rounded-md border border-border-secondary bg-bg-secondary text-[10px] text-text-secondary px-2 py-1">Appointments</div>
+                                </div>
+                                <!-- Content -->
+                                <div class="col-span-2 space-y-2">
+                                <div class="rounded-lg border border-blue-500/20 bg-blue-500/5 p-2">
+                                    <div class="text-[10px] text-text-secondary">Next Appointment</div>
+                                    <div class="text-xs font-semibold text-text-primary">Tue • 10:30 AM</div>
+                                </div>
+                                <div class="rounded-lg border border-border-secondary p-2">
+                                    <div class="text-[10px] text-text-secondary mb-1">Recent Labs</div>
+                                    <div class="flex items-center gap-2">
+                                    <div class="h-2 flex-1 rounded bg-blue-400/30">
+                                        <div class="h-2 w-3/5 rounded bg-blue-400/80"></div>
+                                    </div>
+                                    <span class="text-[10px] text-text-secondary">HbA1c</span>
+                                    </div>
+                                    <div class="mt-1 flex items-center gap-2">
+                                    <div class="h-2 flex-1 rounded bg-cyan-400/30">
+                                        <div class="h-2 w-4/5 rounded bg-cyan-400/80"></div>
+                                    </div>
+                                    <span class="text-[10px] text-text-secondary">LDL</span>
+                                    </div>
+                                </div>
+                                <div class="rounded-lg border border-border-secondary p-2">
+                                    <div class="text-[10px] text-text-secondary mb-1">Medications</div>
+                                    <div class="flex flex-wrap gap-1">
+                                    <span class="text-[10px] px-2 py-0.5 rounded bg-sky-theme text-sky-theme border border-sky-theme">Metformin</span>
+                                    <span class="text-[10px] px-2 py-0.5 rounded bg-sky-theme text-sky-theme border border-sky-theme">Atorvastatin</span>
+                                    <span class="text-[10px] px-2 py-0.5 rounded bg-sky-theme text-sky-theme border border-sky-theme">Amlodipine</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-semibold text-text-primary mb-3 tracking-tight">Your Health, All in One Place</h3>
+                            <p class="text-text-secondary text-sm leading-relaxed">Unified patient experience platform connecting all health data in one secure interface.</p>
+                            <div class="mt-3 flex items-center text-xs text-blue-theme">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
+                            </svg>
+                            Unified • Patient Portal • Secure
+                            </div>
+                        </div>
+                        </div>
+                
+                        <!-- Card 3 - From Rx to Prescription, Instantly -->
+                        <div class="break-inside-avoid group rounded-3xl bg-gradient-to-br from-purple-500/10 to-indigo-600/10 border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 hover-lift fade-in fade-in-delay-2 overflow-hidden">
+                        <!-- Product Preview: Voice to Rx -->
+                        <div class="h-40 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-indigo-900/10"></div>
+                            <div class="relative h-auto w-full rounded-2xl bg-bg-secondary/70 backdrop-blur-xl border border-border-secondary shadow-inner grid grid-cols-12 gap-3 p-3">
+                            <!-- Transcript pane -->
+                            <div class="col-span-7 space-y-2">
+                                <div class="flex items-center justify-between">
+                                <div class="text-[10px] text-text-secondary">Live Transcript</div>
+                                <div class="inline-flex items-center gap-1 text-[10px] text-purple-theme">
+                                    <span class="h-1.5 w-1.5 rounded-full bg-purple-400 animate-pulse"></span> Listening
+                                </div>
+                                </div>
+                                <div class="h-[70px] rounded-md border border-border-secondary p-2 overflow-hidden">
+                                <div class="text-[11px] text-text-primary leading-snug">
+                                    “Start amoxicillin 500 mg, three times daily for 7 days; continue ibuprofen PRN; advise hydration.” …
+                                </div>
+                                </div>
+                                <!-- Waveform -->
+                                <div class="flex items-end gap-0.5 h-7">
+                                <span class="w-1 bg-purple-400/70 h-2 rounded"></span>
+                                <span class="w-1 bg-purple-400/70 h-5 rounded"></span>
+                                <span class="w-1 bg-purple-400/70 h-3 rounded"></span>
+                                <span class="w-1 bg-purple-400/70 h-6 rounded"></span>
+                                <span class="w-1 bg-purple-400/70 h-4 rounded"></span>
+                                <span class="w-1 bg-purple-400/70 h-5 rounded"></span>
+                                <span class="w-1 bg-purple-400/70 h-3 rounded"></span>
+                                <span class="w-1 bg-purple-400/70 h-6 rounded"></span>
+                                </div>
+                            </div>
+                            <!-- Output Rx -->
+                            <div class="col-span-5 space-y-2">
+                                <div class="text-[10px] text-text-secondary">Draft Prescription</div>
+                                <div class="rounded-md border border-purple-500/20 bg-purple-500/5 p-2 space-y-1.5">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-[11px] text-text-primary">Amoxicillin 500 mg</span>
+                                    <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-theme text-emerald-theme border border-emerald-theme">TID • 7d</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-[11px] text-text-primary">Ibuprofen 400 mg</span>
+                                    <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20">PRN</span>
+                                </div>
+                                <div class="text-[10px] text-text-secondary">Notes: Increase fluids, rest 48h.</div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                <button class="text-[11px] px-2 py-1 rounded-md border border-border-secondary hover:border-purple-400/40 transition">Edit</button>
+                                <button class="text-[11px] px-2 py-1 rounded-md bg-purple-theme border border-purple-theme text-purple-theme hover:bg-purple-theme transition">Approve</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-semibold text-text-primary mb-3 tracking-tight">From Rx to Prescription, Instantly</h3>
+                            <p class="text-text-secondary text-sm leading-relaxed">AI-powered prescription management transforming voice commands into accurate prescriptions.</p>
+                            <div class="mt-3 flex items-center text-xs text-purple-theme">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                                <rect x="16" y="16" width="6" height="6" rx="1"></rect><rect x="2" y="16" width="6" height="6" rx="1"></rect><rect x="9" y="2" width="6" height="6" rx="1"></rect><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path><path d="M12 12V8"></path>
+                            </svg>
+                            Voice-to-Rx • AI Processing • Instant
+                            </div>
+                        </div>
+                        </div>
+                
+                        <!-- Card 4 - Build AI-powered health apps, Fast -->
+                        <div class="break-inside-avoid group rounded-3xl bg-gradient-to-br from-indigo-500/10 to-pink-600/10 border border-indigo-500/20 hover:border-indigo-400/40 transition-all duration-300 hover-lift fade-in fade-in-delay-3 overflow-hidden">
+                        <!-- Product Preview: API Suite -->
+                        <div class="h-56 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-indigo-900/10"></div>
+                            <div class="relative h-full w-full bg-bg-secondary/70 backdrop-blur-xl border border-border-secondary shadow-inner grid grid-cols-12 gap-3 p-3">
+                            <!-- Endpoint & Method -->
+                            <div class="col-span-7 space-y-2">
+                                <div class="flex items-center gap-2">
+                                <span class="text-[11px] rounded-md bg-indigo-theme border border-indigo-theme text-indigo-theme px-2 py-1">POST</span>
+                                <div class="flex-1 rounded-md border border-border-secondary bg-bg-secondary/80 text-[11px] text-text-secondary px-2 py-1">/v1/patients/search</div>
+                                <button class="text-[11px] px-2 py-1 rounded-md border border-border-secondary hover:border-indigo-400/40">Send</button>
+                                </div>
+                                <div class="grid grid-cols-2 gap-2">
+                                <div class="rounded-md border border-border-secondary p-2">
+                                    <div class="text-[10px] text-text-secondary mb-1">Headers</div>
+                                    <div class="text-[11px] text-text-primary">Authorization: Bearer ••••</div>
+                                    <div class="text-[11px] text-text-primary">Content-Type: application/json</div>
+                                </div>
+                                <div class="rounded-md border border-border-secondary p-2">
+                                    <div class="text-[10px] text-text-secondary mb-1">Body</div>
+                                    <pre class="whitespace-pre-wrap break-words text-[10px] text-text-primary leading-snug">{ "query": "sharma", "dob": "1983-09-12" }</pre>
+                                </div>
+                                </div>
+                                <div class="rounded-md border border-indigo-500/20 bg-indigo-500/5 p-2">
+                                <div class="text-[10px] text-text-secondary mb-1">cURL</div>
+                                <pre class="whitespace-pre-wrap break-words text-[10px] text-text-primary leading-snug">curl -X POST /v1/patients/search -H "Authorization: Bearer …" -d '{ "query":"sharma" }'</pre>
+                                </div>
+                            </div>
+                            <!-- JSON Response -->
+                            <div class="col-span-5 space-y-2">
+                                <div class="text-[10px] text-text-secondary">Response • 200 OK</div>
+                                <div class="rounded-md border border-border-secondary p-2 bg-bg-secondary/60">
+                                <pre class="whitespace-pre-wrap break-words text-[10px] text-text-primary leading-snug">{
+    "results": [
+    { "id": "p_1", "name": "Anita Sharma", "dob": "1983-09-12" },
+    { "id": "p_2", "name": "Aarav Sharma", "dob": "2012-03-04" }
+    ],
+    "count": 2,
+    "next": null
+}</pre>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-theme text-emerald-theme border border-emerald-theme">Latency 142ms</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded bg-pink-500/10 text-pink-300 border border-pink-500/20">Rate limit 84%</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-semibold text-text-primary mb-3 tracking-tight">Build AI-powered health apps, Fast</h3>
+                            <p class="text-text-secondary text-sm leading-relaxed">Comprehensive API suite for healthcare, with built-in compliance, security, and scalability.</p>
+                            <div class="mt-3 flex items-center text-xs text-indigo-theme">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                                <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/>
+                                <path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle>
+                            </svg>
+                            API Suite • Compliance • Scalable
+                            </div>
+                        </div>
+                        </div>
+                
+                    </div>
+                    </div>
+                </section>
+  
+                <!-- Platform Demo Section -->
+                <section class="relative py-16 sm:py-24">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center mb-12">
+                            <h2 class="text-3xl sm:text-4xl font-semibold text-text-primary mb-4">Platform Demo</h2>
+                        </div>
+                        <div class="relative">
+                            <div class="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl flex items-center justify-center border border-border-primary">
+                                <div class="text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 mx-auto mb-4">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polygon points="10,8 16,12 10,16 10,8"/>
+                                    </svg>
+                                    <p class="text-xl font-medium text-gray-300 mb-2">Platform Demo Video</p>
+                                    <p class="text-gray-400">Coming Soon</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Innovation Section -->
+                <section class="relative py-16 sm:py-24">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <!-- Section Header -->
+                        <div class="text-center mb-16">
+                            <h2 class="text-3xl sm:text-4xl font-semibold text-text-primary mb-4">Healthcare Solutions for Every Role</h2>
+                            <p class="text-lg text-text-secondary max-w-2xl mx-auto">Discover tailored healthcare solutions designed specifically for doctors, hospitals, labs, and retail pharmacies.</p>
+                        </div>
+
+                        <!-- Tabs -->
+                        <div class="mb-12">
+                            <!-- Mobile Dropdown -->
+                            <div class="block sm:hidden">
+                                <div class="relative">
+                                    <select id="mobile-tab-select" aria-label="Select healthcare role" class="w-full appearance-none rounded-xl bg-bg-glass px-4 py-3 pr-10 text-base text-text-primary border border-border-primary focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                                        <option value="Doctor">Doctor</option>
+                                        <option value="Hospital">Hospital</option>
+                                        <option value="Lab">Lab</option>
+                                        <option value="Retail/Pharma">Retail/Pharma</option>
+                                    </select>
+                                    <div class="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
+                                        <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Desktop Tabs -->
+                            <div class="hidden sm:flex justify-center">
+                                <div class="flex space-x-1 bg-bg-glass p-1 rounded-xl border border-border-primary">
+                                    <button data-tab="Doctor" class="tab-button px-6 py-3 rounded-lg font-medium text-text-primary bg-white shadow-sm transition-all">Doctor</button>
+                                    <button data-tab="Hospital" class="tab-button px-6 py-3 rounded-lg font-medium text-text-secondary hover:text-text-primary transition-all">Hospital</button>
+                                    <button data-tab="Lab" class="tab-button px-6 py-3 rounded-lg font-medium text-text-secondary hover:text-text-primary transition-all">Lab</button>
+                                    <button data-tab="Retail/Pharma" class="tab-button px-6 py-3 rounded-lg font-medium text-text-secondary hover:text-text-primary transition-all">Retail/Pharma</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Two-column layout -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            <!-- Left: Header + Benefits List with Progress Bar -->
+                            <div class="relative">
+                                <!-- Progress Bar -->
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar"></div>
+                                </div>
+
+                                <!-- Header Text -->
+                                <div class="mb-8">
+                                    <h2 class="text-2xl sm:text-3xl font-semibold text-text-primary mb-2">Built for Every Healthcare Innovator</h2>
+                                    <p class="text-text-secondary">Choose your role to see tailored solutions</p>
+                                </div>
+
+                                <!-- Benefits List -->
+                                <div class="space-y-4 benefits-container">
+                                    <!-- Benefits will be populated by JavaScript -->
+                                </div>
+                            </div>
+        
+                            <!-- Right: Content Placeholder -->
+                            <div class="relative">
+                                <div class="aspect-square bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl flex items-center justify-center border border-border-primary">
+                                    <div class="text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 mx-auto mb-4">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                            <circle cx="9" cy="9" r="2"/>
+                                            <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                                        </svg>
+                                        <p class="text-gray-400">Content Preview</p>
+                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                </section>
+
+                <!-- Outcomes Section -->
+                <section class="relative py-16 sm:py-24 bg-gradient-to-br from-emerald-50/5 to-teal-50/5">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center mb-16">
+                            <h2 class="text-3xl sm:text-4xl font-semibold text-text-primary mb-4">Best Health Outcomes Driven by Eka</h2>
+                                                </div>
+        
+                        <!-- Testimonial Card -->
+                        <div class="max-w-4xl mx-auto mb-12">
+                            <div class="backdrop-blur-xl bg-bg-glass border border-border-secondary rounded-3xl p-8 shadow-2xl">
+                                <div class="text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400 mx-auto mb-6">
+                                        <path d="M3 21c3 0 7-1 7-8V5a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v8c0 7 4 8 7 8"/>
+                                    </svg>
+                                    <blockquote class="text-lg text-text-primary mb-6 leading-relaxed">
+                                        "Eka Care has transformed how we deliver healthcare. The AI-powered insights help us make better decisions faster, and our patient outcomes have improved significantly."
+                                    </blockquote>
+                                    <div class="flex items-center justify-center gap-4">
+                                        <div class="h-12 w-12 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center">
+                                            <span class="text-white font-semibold">Dr. S</span>
+                                                        </div>
+                                        <div class="text-left">
+                                            <p class="font-semibold text-text-primary">Dr. Sarah Johnson</p>
+                                            <p class="text-sm text-text-secondary">Chief of Medicine, City Hospital</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                        <!-- Partner Logos and Stats -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- Partner Logos -->
+                            <div>
+                                <h3 class="text-xl font-semibold text-text-primary mb-6">Partner Success Stories</h3>
+                                <div class="space-y-4">
+                                    <div class="flex items-center gap-4 p-4 bg-bg-glass border border-border-primary rounded-xl">
+                                        <div class="h-10 w-10 rounded-lg bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center">
+                                            <span class="text-white font-semibold text-sm">H</span>
+                                            </div>
+                                        <div>
+                                            <p class="font-medium text-text-primary">HealthTech Solutions</p>
+                                            <p class="text-sm text-text-secondary">30% improvement in patient engagement</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-4 p-4 bg-bg-glass border border-border-primary rounded-xl">
+                                        <div class="h-10 w-10 rounded-lg bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center">
+                                            <span class="text-white font-semibold text-sm">M</span>
+                                </div>
+                                        <div>
+                                            <p class="font-medium text-text-primary">MediCare Plus</p>
+                                            <p class="text-sm text-text-secondary">50% reduction in administrative time</p>
+                                            </div>
+                                                        </div>
+                                    <div class="flex items-center gap-4 p-4 bg-bg-glass border border-border-primary rounded-xl">
+                                        <div class="h-10 w-10 rounded-lg bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center">
+                                            <span class="text-white font-semibold text-sm">C</span>
+                                                    </div>
+                                        <div>
+                                            <p class="font-medium text-text-primary">CareFirst Network</p>
+                                            <p class="text-sm text-text-secondary">99.9% uptime with HIPAA compliance</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                            <!-- Stats Bar -->
+                            <div>
+                                <h3 class="text-xl font-semibold text-text-primary mb-6">Platform Impact</h3>
+                                <div class="space-y-6">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-text-secondary">Digital Health Records</span>
+                                        <span class="font-semibold text-text-primary">20M+</span>
+                                            </div>
+                                    <div class="w-full bg-bg-tertiary rounded-full h-2">
+                                        <div class="bg-gradient-to-r from-emerald-400 to-teal-500 h-2 rounded-full progress-85"></div>
+                                        </div>
+        
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-text-secondary">Active Healthcare Providers</span>
+                                        <span class="font-semibold text-text-primary">100k+</span>
+                                                    </div>
+                                    <div class="w-full bg-bg-tertiary rounded-full h-2">
+                                        <div class="bg-gradient-to-r from-blue-400 to-cyan-500 h-2 rounded-full progress-92"></div>
+                                                </div>
+                                                
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-text-secondary">Connected Pharmacies</span>
+                                        <span class="font-semibold text-text-primary">10,000+</span>
+                                                    </div>
+                                    <div class="w-full bg-bg-tertiary rounded-full h-2">
+                                        <div class="bg-gradient-to-r from-purple-400 to-indigo-500 h-2 rounded-full progress-78"></div>
+                                                </div>
+                                                
+                                    <div class="mt-8 p-4 bg-bg-glass border border-border-primary rounded-xl">
+                                        <p class="text-sm text-text-secondary">Integration Examples</p>
+                                        <div class="flex flex-wrap gap-2 mt-2">
+                                            <span class="px-3 py-1 bg-emerald-500/10 text-emerald-600 rounded-full text-xs font-medium">EHR Systems</span>
+                                            <span class="px-3 py-1 bg-blue-500/10 text-blue-600 rounded-full text-xs font-medium">Telemedicine</span>
+                                            <span class="px-3 py-1 bg-purple-500/10 text-purple-600 rounded-full text-xs font-medium">Wearables</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </section>
+
+                <!-- AI Features Section -->
+                <section class="relative py-16 sm:py-24">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center mb-16">
+                            <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4 transform transition-transform duration-300 hover:scale-105">Infinite Healthcare Possibilities</h2>
+                            <p class="text-lg text-text-secondary max-w-2xl mx-auto">Unlock the future of healthcare with our comprehensive AI-powered platform</p>
+                        </div>
+
+                        <!-- Modern Card Grid with Enhanced Layout -->
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10 mb-16">
+                            <!-- Card 1 - Smarter Forms -->
+                            <div class="group relative">
+                                <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/15 to-teal-600/15 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-105"></div>
+
+                                <!-- Floating elements -->
+                                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                                    <div class="absolute top-4 right-4 w-2 h-2 bg-emerald-400 rounded-full animate-ping"></div>
+                                    <div class="absolute bottom-6 left-6 w-1 h-1 bg-teal-400 rounded-full animate-pulse delay-300"></div>
+                                    <div class="absolute top-1/3 right-2 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce delay-500"></div>
+                                </div>
+
+                                <div class="relative backdrop-blur-xl bg-gradient-to-br from-bg-glass to-bg-glass/80 border border-border-secondary rounded-3xl p-8 shadow-2xl transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-emerald-500/20 group-hover:border-emerald-400/30 h-full">
+                                    <div class="text-center">
+                                        <!-- Enhanced icon with animations -->
+                                        <div class="relative inline-block mb-6">
+                                            <div class="h-20 w-20 rounded-3xl bg-gradient-to-br from-emerald-400 via-teal-500 to-cyan-500 flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white drop-shadow-sm">
+                                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                                    <polyline points="14,2 14,8 20,8"/>
+                                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                                    <polyline points="10,9 9,9 8,9"/>
+                                                </svg>
+                                            </div>
+                                            <!-- Animated ring -->
+                                            <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-emerald-400 to-teal-500 animate-ping opacity-20"></div>
+                                        </div>
+
+                                        <h3 class="text-2xl font-bold text-text-primary mb-4 transform transition-transform duration-300 group-hover:translate-y-[-2px]">Smarter Forms, Sharper Diagnosis</h3>
+                                        <p class="text-text-secondary leading-relaxed transform transition-all duration-300 group-hover:translate-y-[-1px] delay-75">AI-powered intake forms that adapt to patient responses and help clinicians make more accurate diagnoses faster.</p>
+
+                                        <!-- Feature highlights -->
+                                        <div class="mt-6 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
+                                            <div class="flex items-center gap-2 text-sm text-emerald-theme">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-emerald-400"></div>
+                                                <span>Adaptive questioning</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 text-sm text-teal-theme">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-teal-400"></div>
+                                                <span>Real-time validation</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 text-sm text-cyan-theme">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
+                                                <span>Pattern recognition</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 - Organized Records -->
+                            <div class="group relative">
+                                <div class="absolute inset-0 bg-gradient-to-br from-blue-500/15 to-cyan-600/15 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-105 delay-100"></div>
+
+                                <!-- Floating elements -->
+                                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100">
+                                    <div class="absolute top-6 left-4 w-1.5 h-1.5 bg-blue-400 rounded-full animate-ping delay-200"></div>
+                                    <div class="absolute bottom-4 right-6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse delay-400"></div>
+                                    <div class="absolute top-1/2 left-2 w-1 h-1 bg-indigo-400 rounded-full animate-bounce delay-600"></div>
+                                </div>
+
+                                <div class="relative backdrop-blur-xl bg-gradient-to-br from-bg-glass to-bg-glass/80 border border-border-secondary rounded-3xl p-8 shadow-2xl transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-blue-500/20 group-hover:border-blue-400/30 h-full">
+                                    <div class="text-center">
+                                        <!-- Enhanced icon -->
+                                        <div class="relative inline-block mb-6">
+                                            <div class="h-20 w-20 rounded-3xl bg-gradient-to-br from-blue-400 via-cyan-500 to-indigo-500 flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white drop-shadow-sm">
+                                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                                </svg>
+                                            </div>
+                                            <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-400 to-cyan-500 animate-ping opacity-20"></div>
+                                        </div>
+
+                                        <h3 class="text-2xl font-bold text-text-primary mb-4 transform transition-transform duration-300 group-hover:translate-y-[-2px]">Organized Records, Instantly Right</h3>
+                                        <p class="text-text-secondary leading-relaxed transform transition-all duration-300 group-hover:translate-y-[-1px] delay-75">Intelligent document processing that extracts, categorizes, and organizes patient records with unprecedented accuracy.</p>
+
+                                        <!-- Feature highlights -->
+                                        <div class="mt-6 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
+                                            <div class="flex items-center gap-2 text-sm text-blue-theme">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                                                <span>Auto-categorization</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 text-sm text-cyan-theme">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
+                                                <span>OCR processing</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 text-sm text-indigo-theme">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-indigo-400"></div>
+                                                <span>Data extraction</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 - Voice to Rx -->
+                            <div class="group relative">
+                                <div class="absolute inset-0 bg-gradient-to-br from-purple-500/15 to-indigo-600/15 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-105 delay-200"></div>
+
+                                <!-- Floating elements -->
+                                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-200">
+                                    <div class="absolute bottom-6 right-4 w-1.5 h-1.5 bg-purple-400 rounded-full animate-ping delay-300"></div>
+                                    <div class="absolute top-4 left-6 w-1 h-1 bg-indigo-400 rounded-full animate-pulse delay-500"></div>
+                                    <div class="absolute bottom-1/3 right-2 w-1 h-1 bg-pink-400 rounded-full animate-bounce delay-700"></div>
+                                </div>
+
+                                <div class="relative backdrop-blur-xl bg-gradient-to-br from-bg-glass to-bg-glass/80 border border-border-secondary rounded-3xl p-8 shadow-2xl transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-purple-500/20 group-hover:border-purple-400/30 h-full">
+                                    <div class="text-center">
+                                        <!-- Enhanced icon -->
+                                        <div class="relative inline-block mb-6">
+                                            <div class="h-20 w-20 rounded-3xl bg-gradient-to-br from-purple-400 via-indigo-500 to-pink-500 flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white drop-shadow-sm">
+                                                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                                                    <line x1="12" y1="19" x2="12" y2="23"/>
+                                                    <line x1="8" y1="23" x2="16" y2="23"/>
+                                                </svg>
+                                            </div>
+                                            <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-purple-400 to-indigo-500 animate-ping opacity-20"></div>
+                                        </div>
+
+                                        <h3 class="text-2xl font-bold text-text-primary mb-4 transform transition-transform duration-300 group-hover:translate-y-[-2px]">From Voice to Rx in Seconds</h3>
+                                        <p class="text-text-secondary leading-relaxed transform transition-all duration-300 group-hover:translate-y-[-1px] delay-75">Voice-to-prescription technology that captures clinician instructions and generates accurate prescriptions instantly.</p>
+
+                                        <!-- Feature highlights -->
+                                        <div class="mt-6 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
+                                            <div class="flex items-center gap-2 text-sm text-purple-theme">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-purple-400"></div>
+                                                <span>Voice recognition</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 text-sm text-indigo-theme">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-indigo-400"></div>
+                                                <span>Natural language</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 text-sm text-pink-400">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-pink-400"></div>
+                                                <span>Instant generation</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Enhanced Developer Platform Card -->
+                        <div class="relative group">
+                            <!-- Multi-layered background effects -->
+                            <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/20 via-purple-500/15 to-pink-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700 transform group-hover:scale-105"></div>
+                            <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-indigo-500/10 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700 delay-100 transform group-hover:scale-105"></div>
+
+                            <!-- Dynamic particles -->
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+                                <div class="absolute top-8 left-1/5 w-1 h-1 bg-indigo-400 rounded-full animate-ping delay-300"></div>
+                                <div class="absolute bottom-6 right-1/4 w-1.5 h-1.5 bg-purple-400 rounded-full animate-pulse delay-500"></div>
+                                <div class="absolute top-1/3 right-1/6 w-1 h-1 bg-pink-400 rounded-full animate-bounce delay-700"></div>
+                                <div class="absolute bottom-1/4 left-1/3 w-0.5 h-0.5 bg-cyan-400 rounded-full animate-ping delay-900"></div>
+                            </div>
+
+                            <div class="relative backdrop-blur-xl bg-gradient-to-br from-bg-glass via-bg-glass/90 to-bg-glass border border-border-secondary rounded-3xl p-8 lg:p-12 shadow-2xl transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-indigo-500/25 group-hover:border-indigo-400/40">
+                                <div class="text-center max-w-4xl mx-auto">
+                                    <div class="inline-flex items-center gap-4 mb-6">
+                                        <div class="h-16 w-16 rounded-3xl bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:rotate-6 group-hover:scale-110">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-3xl lg:text-4xl font-bold text-text-primary transform transition-transform duration-300 group-hover:translate-y-[-2px]">APIs Built for the Health Innovators at Scale</h3>
+                                    </div>
+                                    <p class="text-text-secondary text-xl leading-relaxed mb-10 max-w-3xl mx-auto transform transition-all duration-300 group-hover:translate-y-[-2px] delay-75">Comprehensive API suite designed specifically for healthcare applications, with built-in compliance, security, and scalability features.</p>
+                                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center transform transition-all duration-300 group-hover:translate-y-[-2px] delay-100">
+                                        <button class="inline-flex items-center gap-3 bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-600 hover:from-indigo-600 hover:via-purple-700 hover:to-pink-700 text-white font-semibold py-4 px-10 rounded-2xl transition-all duration-300 hover-lift hover:shadow-indigo-500/30 group">
+                                            <span>Learn More</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300 group-hover:translate-x-1">
+                                                <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                                            </svg>
+                                        </button>
+                                        <button class="inline-flex items-center gap-2 text-text-primary font-medium py-4 px-8 rounded-2xl border border-border-primary hover:border-border-accent transition-all duration-300 hover:bg-bg-card transform group-hover:translate-y-[-1px]">
+                                            <span>View Documentation</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300 group-hover:translate-x-1">
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15,3 21,3 21,9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Integrations Section -->
+                <section class="relative py-16 sm:py-24 bg-gradient-to-br from-gray-50/5 to-slate-50/5">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center mb-16">
+                            <h2 class="text-3xl sm:text-4xl font-semibold text-text-primary mb-4">All the Apps That You Need</h2>
+                            <p class="text-lg text-text-secondary max-w-2xl mx-auto">Seamlessly integrate with your existing healthcare ecosystem. Our platform connects with 200+ healthcare applications and services.</p>
+                            </div>
+                            
+                        <!-- App Icons Grid -->
+                        <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-6">
+                            <!-- Gmail -->
+                            <div class="aspect-square bg-bg-card rounded-xl border border-border-primary flex items-center justify-center hover:shadow-lg transition-shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-500">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            
+                            <!-- WhatsApp -->
+                            <div class="aspect-square bg-bg-card rounded-xl border border-border-primary flex items-center justify-center hover:shadow-lg transition-shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                                </svg>
+                            </div>
+                            
+                            <!-- Google Drive -->
+                            <div class="aspect-square bg-bg-card rounded-xl border border-border-primary flex items-center justify-center hover:shadow-lg transition-shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                    <polyline points="10,9 9,9 8,9"/>
+                                </svg>
+                            </div>
+                            
+                            <!-- Sheets -->
+                            <div class="aspect-square bg-bg-card rounded-xl border border-border-primary flex items-center justify-center hover:shadow-lg transition-shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="3" y1="9" x2="21" y2="9"/>
+                                    <line x1="3" y1="15" x2="21" y2="15"/>
+                                    <line x1="9" y1="3" x2="9" y2="21"/>
+                                    <line x1="15" y1="3" x2="15" y2="21"/>
+                                </svg>
+                                </div>
+                            
+                            <!-- Slack -->
+                            <div class="aspect-square bg-bg-card rounded-xl border border-border-primary flex items-center justify-center hover:shadow-lg transition-shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple-500">
+                                    <path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/>
+                                    <path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                                    <path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/>
+                                    <path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/>
+                                    <path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/>
+                                    <path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67 1.5-1.5 1.5z"/>
+                                    <path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/>
+                                    <path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/>
+                                </svg>
+                </div>
+    
+                            <!-- More apps... -->
+                            <div class="aspect-square bg-bg-card rounded-xl border border-border-primary flex items-center justify-center hover:shadow-lg transition-shadow">
+                                <span class="text-text-secondary font-semibold text-sm">+200</span>
+                    </div>
+    
+                            <!-- Additional app placeholders -->
+                            <div class="aspect-square bg-bg-card rounded-xl border border-border-primary flex items-center justify-center hover:shadow-lg transition-shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600">
+                                    <path d="M9 12l2 2 4-4"/>
+                                    <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                                    <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                                    <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"/>
+                                    <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"/>
+                                </svg>
+                    </div>
+    
+                            <div class="aspect-square bg-bg-card rounded-xl border border-border-primary flex items-center justify-center hover:shadow-lg transition-shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-indigo-500">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="9" cy="9" r="2"/>
+                                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                                </svg>
+                    </div>
+    
+                            <div class="aspect-square bg-bg-card rounded-xl border border-border-primary flex items-center justify-center hover:shadow-lg transition-shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                    </div>
+    
+                            <div class="aspect-square bg-bg-card rounded-xl border border-border-primary flex items-center justify-center hover:shadow-lg transition-shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-500">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                    </div>
+                </div>
+            </div>
+                </section>
+        
+                <!-- Security & Benefits Section -->
+                <section class="relative py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center mb-16">
+                            <h2 class="text-3xl sm:text-4xl font-semibold text-text-primary mb-4">Your Health Data, Secured at Every Step</h2>
+                    </div>
+    
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                            <!-- Main Security Card -->
+                            <div class="lg:col-span-2">
+                                <div class="backdrop-blur-xl bg-bg-glass border border-border-secondary rounded-3xl p-8 shadow-2xl h-full">
+                                    <div class="flex items-start gap-6">
+                                        <div class="h-16 w-16 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                                <circle cx="12" cy="16" r="1"/>
+                                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </div>
+                                        <div class="flex-1">
+                                            <h3 class="text-xl font-semibold text-text-primary mb-4">Enterprise-Grade Security</h3>
+                                            <div class="space-y-3">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="h-2 w-2 rounded-full bg-emerald-400"></div>
+                                                    <span class="text-text-secondary">End-to-end encryption for all data</span>
+                    </div>
+                                                <div class="flex items-center gap-3">
+                                                    <div class="h-2 w-2 rounded-full bg-emerald-400"></div>
+                                                    <span class="text-text-secondary">HIPAA and GDPR compliant</span>
+                </div>
+                                                <div class="flex items-center gap-3">
+                                                    <div class="h-2 w-2 rounded-full bg-emerald-400"></div>
+                                                    <span class="text-text-secondary">Regular security audits and penetration testing</span>
+            </div>
+                                                <div class="flex items-center gap-3">
+                                                    <div class="h-2 w-2 rounded-full bg-emerald-400"></div>
+                                                    <span class="text-text-secondary">Multi-factor authentication</span>
+                </div>
+                                </div>
+                            </div>
+                        </div>
+                                </div>
+                            </div>
+    
+                            <!-- Small Cards -->
+                            <div class="space-y-6">
+                                <!-- Privacy Card -->
+                                <div class="backdrop-blur-xl bg-bg-glass border border-border-secondary rounded-2xl p-6 shadow-xl">
+                                    <div class="flex items-center gap-4">
+                                        <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                            </svg>
+                        </div>
+                                <div>
+                                            <h4 class="font-semibold text-text-primary mb-1">Data Privacy</h4>
+                                            <p class="text-sm text-text-secondary">Your data belongs to you, always</p>
+                                </div>
+                        </div>
+                    </div>
+    
+                                <!-- Compliance Card -->
+                                <div class="backdrop-blur-xl bg-bg-glass border border-border-secondary rounded-2xl p-6 shadow-xl">
+                                    <div class="flex items-center gap-4">
+                                        <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                                                <path d="M9 12l2 2 4-4"/>
+                                                <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                                                <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                                                <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"/>
+                                                <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"/>
+                                            </svg>
+                                </div>
+                                <div>
+                                            <h4 class="font-semibold text-text-primary mb-1">HIPAA Compliance</h4>
+                                            <p class="text-sm text-text-secondary">Healthcare regulatory standards</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </section>
+    
+    </main>
+
+    <!-- Footer Section -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Privacy Consent Banner -->
+    <div id="privacy-consent-banner" class="fixed bottom-0 left-0 right-0 z-50 bg-bg-primary border-t border-border-primary shadow-lg transform translate-y-full transition-transform duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div class="flex-1">
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Privacy & Analytics</h3>
+                    <p class="text-text-secondary text-sm">
+                        We use analytics to improve our healthcare platform. Your privacy is protected with HIPAA-compliant tracking that anonymizes all data.
+                        <a href="/privacy-policy" class="text-blue-600 hover:text-blue-700 underline ml-1">Learn more</a>
+                    </p>
+                </div>
+                <div class="flex gap-3">
+                    <button id="accept-analytics" class="px-6 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium rounded-lg transition-colors">
+                        Accept Analytics
+                    </button>
+                    <button id="decline-analytics" class="px-6 py-2 border border-border-primary text-text-secondary hover:text-text-primary text-sm font-medium rounded-lg transition-colors">
+                        Decline
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Privacy consent management
+    document.addEventListener('DOMContentLoaded', () => {
+        const consentBanner = document.getElementById('privacy-consent-banner');
+        const acceptBtn = document.getElementById('accept-analytics');
+        const declineBtn = document.getElementById('decline-analytics');
+
+        // Check if user has already made a choice
+        const consentChoice = localStorage.getItem('analytics-consent');
+
+        if (!consentChoice) {
+            // Show banner after 3 seconds
+            setTimeout(() => {
+                consentBanner.classList.remove('translate-y-full');
+            }, 3000);
+        } else if (consentChoice === 'accepted' && window.ekaAnalytics) {
+            window.ekaAnalytics.setConsent(true);
+        }
+
+        // Handle accept
+        acceptBtn.addEventListener('click', () => {
+            localStorage.setItem('analytics-consent', 'accepted');
+            consentBanner.classList.add('translate-y-full');
+            if (window.ekaAnalytics) {
+                window.ekaAnalytics.setConsent(true);
+            }
+        });
+
+        // Handle decline
+        declineBtn.addEventListener('click', () => {
+            localStorage.setItem('analytics-consent', 'declined');
+            consentBanner.classList.add('translate-y-full');
+            if (window.ekaAnalytics) {
+                window.ekaAnalytics.setConsent(false);
+            }
+        });
+    });
+    </script>
+    </body>
+</html>

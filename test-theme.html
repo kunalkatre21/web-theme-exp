@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Test</title>
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --text-primary: #000000;
+        }
+        .dark {
+            --bg-primary: #000000;
+            --text-primary: #ffffff;
+        }
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .theme-toggle {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .debug {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: monospace;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Theme Switching Test</h1>
+    <p>This is a simple test to see if theme switching works.</p>
+
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+    <div class="debug">
+        <div>Current Theme: <span id="current-theme">light</span></div>
+        <div>HTML Classes: <span id="html-classes">none</span></div>
+        <div>BG Color: <span id="bg-color">checking...</span></div>
+    </div>
+
+    <script>
+        let currentTheme = 'light';
+
+        function toggleTheme() {
+            console.log('Toggle clicked, current theme:', currentTheme);
+            const html = document.documentElement;
+
+            if (currentTheme === 'light') {
+                html.classList.add('dark');
+                currentTheme = 'dark';
+                console.log('Switched to dark theme');
+            } else {
+                html.classList.remove('dark');
+                currentTheme = 'light';
+                console.log('Switched to light theme');
+            }
+
+            updateDebug();
+        }
+
+        function updateDebug() {
+            document.getElementById('current-theme').textContent = currentTheme;
+            document.getElementById('html-classes').textContent = document.documentElement.className || 'none';
+            const bgColor = getComputedStyle(document.body).backgroundColor;
+            document.getElementById('bg-color').textContent = bgColor;
+        }
+
+        // Initial debug update
+        document.addEventListener('DOMContentLoaded', updateDebug);
+    </script>
+</body>
+</html>
